@@ -1,0 +1,136 @@
+/* =============================
+   Color Palette:
+   - Primary Navy: #0B3D91
+   - Secondary Blue: #1155CC
+   - Neutral Gray: #E5E5E5 / #F7F9FC
+   - Black Text: #1A1A1A
+   ============================= */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f7f9fc;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  background: #0b3d91;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 4px solid #1155cc;
+}
+
+.site-header .logo-area h1 {
+  font-size: 32px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.site-header .logo-area span {
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+/* Layout */
+.layout-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: white;
+  border-right: 1px solid #e5e5e5;
+  padding: 20px;
+}
+
+.sidebar nav ul li {
+  list-style: none;
+  margin-bottom: 14px;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #0b3d91;
+  transition: 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+  color: #1155cc;
+  padding-left: 6px;
+}
+
+/* Main Content */
+.content-area {
+  flex: 1;
+  padding: 40px;
+  background: #ffffff;
+  border-left: 1px solid #e5e5e5;
+}
+
+.content-area h1,
+.content-area h2,
+.content-area h3 {
+  color: #0b3d91;
+  margin-bottom: 12px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background: #0b3d91;
+  color: white;
+}
+
+/* Footer */
+.site-footer {
+  background: white;
+  border-top: 3px solid #0b3d91;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.site-footer .footer-col h4 {
+  color: #0b3d91;
+  margin-bottom: 10px;
+}
+
+/* Images */
+.image-placeholder {
+  width: 100%;
+  height: 260px;
+  background: #e5e5e5;
+  border: 1px dashed #0b3d91;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0b3d91;
+  margin: 20px 0;
+  font-style: italic;
+}
