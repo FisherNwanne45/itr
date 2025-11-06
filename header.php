@@ -5,11 +5,12 @@ require_once 'config.php';
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title><?php echo $acronym; ?> - <?php echo $site_name; ?></title>
-        <style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="<?php echo $site_url; ?>/assets/images/favicon.png">
+    <title><?php echo $acronym; ?> - <?php echo $site_name; ?></title>
+    <style>
         :root {
             --primary-blue: #0056b3;
             --secondary-blue: #007bff;
@@ -557,113 +558,113 @@ require_once 'config.php';
                 height: 400px;
             }
         }
-        </style>
-    </head>
+    </style>
+</head>
 
-    <body>
-        <header>
-            <div class="logo-section">
-                <a href="<?php echo $site_url; ?>/index.php">
-                    <div class="logo-container">
-                        <div class="logo"><img src="<?php echo $site_url; ?>/assets/images/logo.png"
-                                style="width: 100px;" />
-                            <!--<?php echo $acronym; ?>-->
-                        </div>
-                        <div class="site-name"><?php echo $site_name; ?></div>
-                        <div class="site-tagline">Global Trade Insights & Research</div>
+<body>
+    <header>
+        <div class="logo-section">
+            <a href="<?php echo $site_url; ?>/index.php">
+                <div class="logo-container">
+                    <div class="logo"><img src="<?php echo $site_url; ?>/assets/images/logo.png"
+                            style="width: 100px;" />
+                        <!--<?php echo $acronym; ?>-->
                     </div>
-                </a>
-            </div>
-            <div class="hamburger-menu" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <nav>
-                <div class="container">
-                    <div class="nav-wrapper" id="nav-wrapper">
-                        <ul>
-                            <li><a href="<?php echo $site_url; ?>/index.php">Home</a></li>
-                            <li class="dropdown" id="dropdown-about">
-                                <a href="#">About</a>
-                                <div class="dropdown-content">
-                                    <a href="<?php echo $site_url; ?>/pages/about/about-project.php">About the
-                                        Project</a>
-                                    <a href="<?php echo $site_url; ?>/pages/about/project-goals.php">Project Goals</a>
-                                    <a href="<?php echo $site_url; ?>/pages/about/team.php">Team</a>
-                                    <a
-                                        href="<?php echo $site_url; ?>/pages/about/acknowledgements.php">Acknowledgements</a>
-                                </div>
-                            </li>
-                            <li class="dropdown" id="dropdown-development">
-                                <a href="#">Development</a>
-                                <div class="dropdown-content">
-                                    <a href="<?php echo $site_url; ?>/pages/development/methodology.php">Methodology</a>
-                                    <a href="<?php echo $site_url; ?>/pages/development/data-sources.php">Data
-                                        Sources</a>
-
-
-                                </div>
-                            </li>
-                            <li class="dropdown" id="dropdown-trade">
-                                <a href="#">Trade</a>
-                                <div class="dropdown-content">
-                                    <a href="<?php echo $site_url; ?>/pages/trade/basics.php">Basics</a>
-                                    <a href="<?php echo $site_url; ?>/pages/trade/theories.php">Theories</a>
-                                    <a href="<?php echo $site_url; ?>/pages/trade/agreements.php">Agreements</a>
-                                    <a href="<?php echo $site_url; ?>/pages/trade/logistics-supply-chains.php">Logistics
-                                        &
-                                        Supply Chains</a>
-                                    <a href="<?php echo $site_url; ?>/pages/trade/global-trade-history.php">Global Trade
-                                        History</a>
-                                </div>
-                            </li>
-                            <li class="dropdown" id="dropdown-monetary">
-                                <a href="#">Monetary</a>
-                                <div class="dropdown-content">
-                                    <a href="<?php echo $site_url; ?>/pages/monetary/policies.php">Policies</a>
-                                    <a href="<?php echo $site_url; ?>/pages/monetary/exchange-rates.php">Exchange
-                                        Rates</a>
-                                    <a href="<?php echo $site_url; ?>/pages/monetary/central-banks.php">Central
-                                        Banks</a>
-                                    <a href="<?php echo $site_url; ?>/pages/monetary/inflation-controls.php">Inflation
-                                        Controls</a>
-                                </div>
-                            </li>
-                            <li class="dropdown" id="dropdown-countries">
-                                <a href="#">Countries</a>
-                                <div class="dropdown-content">
-                                    <a href="<?php echo $site_url; ?>/pages/countries/overview.php">Overview</a>
-                                    <a href="<?php echo $site_url; ?>/pages/countries/regions.php">Regions</a>
-                                    <a href="<?php echo $site_url; ?>/pages/countries/country-profile.php">Country
-                                        Profile</a>
-                                </div>
-                            </li>
-                            <li class="dropdown" id="dropdown-research">
-                                <a href="#">Research</a>
-                                <div class="dropdown-content">
-                                    <a href="<?php echo $site_url; ?>/pages/research/research-articles.php">Research
-                                        Articles</a>
-                                    <a href="<?php echo $site_url; ?>/pages/research/case-studies.php">Case Studies</a>
-                                    <a href="<?php echo $site_url; ?>/pages/research/data-visualization.php">Data
-                                        Visualization</a>
-                                </div>
-                            </li>
-                            <li class="dropdown" id="dropdown-contact">
-                                <a href="#">Contact</a>
-                                <div class="dropdown-content">
-                                    <a href="<?php echo $site_url; ?>/pages/contact/contact.php">Contact</a>
-                                    <a href="<?php echo $site_url; ?>/pages/contact/faq.php">FAQ</a>
-                                    <!--<a href="<?php echo $site_url; ?>/pages/contact/feedback.php">Feedback</a>-->
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                    <div class="site-name"><?php echo $site_name; ?></div>
+                    <div class="site-tagline">Global Trade Insights & Research</div>
                 </div>
-            </nav>
-        </header>
+            </a>
+        </div>
+        <div class="hamburger-menu" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper" id="nav-wrapper">
+                    <ul>
+                        <li><a href="<?php echo $site_url; ?>/index.php">Home</a></li>
+                        <li class="dropdown" id="dropdown-about">
+                            <a href="#">About</a>
+                            <div class="dropdown-content">
+                                <a href="<?php echo $site_url; ?>/pages/about/about-project.php">About the
+                                    Project</a>
+                                <a href="<?php echo $site_url; ?>/pages/about/project-goals.php">Project Goals</a>
+                                <a href="<?php echo $site_url; ?>/pages/about/team.php">Team</a>
+                                <a
+                                    href="<?php echo $site_url; ?>/pages/about/acknowledgements.php">Acknowledgements</a>
+                            </div>
+                        </li>
+                        <li class="dropdown" id="dropdown-development">
+                            <a href="#">Development</a>
+                            <div class="dropdown-content">
+                                <a href="<?php echo $site_url; ?>/pages/development/methodology.php">Methodology</a>
+                                <a href="<?php echo $site_url; ?>/pages/development/data-sources.php">Data
+                                    Sources</a>
 
-        <script>
+
+                            </div>
+                        </li>
+                        <li class="dropdown" id="dropdown-trade">
+                            <a href="#">Trade</a>
+                            <div class="dropdown-content">
+                                <a href="<?php echo $site_url; ?>/pages/trade/basics.php">Basics</a>
+                                <a href="<?php echo $site_url; ?>/pages/trade/theories.php">Theories</a>
+                                <a href="<?php echo $site_url; ?>/pages/trade/agreements.php">Agreements</a>
+                                <a href="<?php echo $site_url; ?>/pages/trade/logistics-supply-chains.php">Logistics
+                                    &
+                                    Supply Chains</a>
+                                <a href="<?php echo $site_url; ?>/pages/trade/global-trade-history.php">Global Trade
+                                    History</a>
+                            </div>
+                        </li>
+                        <li class="dropdown" id="dropdown-monetary">
+                            <a href="#">Monetary</a>
+                            <div class="dropdown-content">
+                                <a href="<?php echo $site_url; ?>/pages/monetary/policies.php">Policies</a>
+                                <a href="<?php echo $site_url; ?>/pages/monetary/exchange-rates.php">Exchange
+                                    Rates</a>
+                                <a href="<?php echo $site_url; ?>/pages/monetary/central-banks.php">Central
+                                    Banks</a>
+                                <a href="<?php echo $site_url; ?>/pages/monetary/inflation-controls.php">Inflation
+                                    Controls</a>
+                            </div>
+                        </li>
+                        <li class="dropdown" id="dropdown-countries">
+                            <a href="#">Countries</a>
+                            <div class="dropdown-content">
+                                <a href="<?php echo $site_url; ?>/pages/countries/overview.php">Overview</a>
+                                <a href="<?php echo $site_url; ?>/pages/countries/regions.php">Regions</a>
+                                <a href="<?php echo $site_url; ?>/pages/countries/country-profile.php">Country
+                                    Profile</a>
+                            </div>
+                        </li>
+                        <li class="dropdown" id="dropdown-research">
+                            <a href="#">Research</a>
+                            <div class="dropdown-content">
+                                <a href="<?php echo $site_url; ?>/pages/research/research-articles.php">Research
+                                    Articles</a>
+                                <a href="<?php echo $site_url; ?>/pages/research/case-studies.php">Case Studies</a>
+                                <a href="<?php echo $site_url; ?>/pages/research/data-visualization.php">Data
+                                    Visualization</a>
+                            </div>
+                        </li>
+                        <li class="dropdown" id="dropdown-contact">
+                            <a href="#">Contact</a>
+                            <div class="dropdown-content">
+                                <a href="<?php echo $site_url; ?>/pages/contact/contact.php">Contact</a>
+                                <a href="<?php echo $site_url; ?>/pages/contact/faq.php">FAQ</a>
+                                <!--<a href="<?php echo $site_url; ?>/pages/contact/feedback.php">Feedback</a>-->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <script>
         document.addEventListener('DOMContentLoaded', function() {
             const hamburger = document.getElementById('hamburger');
             const navWrapper = document.getElementById('nav-wrapper');
@@ -711,4 +712,4 @@ require_once 'config.php';
                 }
             });
         });
-        </script>
+    </script>
